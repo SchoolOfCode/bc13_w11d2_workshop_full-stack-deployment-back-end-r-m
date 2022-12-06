@@ -5,9 +5,9 @@ const router = express.Router();
 
 /* GET shopping list. */
 router.get("/", async (req, res) => {
-  console.log('yo')
+
   const data = await getShoppingList();
-  console.log('hi', data)
+
   res.json({ success: true, payload: data });
 });
 
